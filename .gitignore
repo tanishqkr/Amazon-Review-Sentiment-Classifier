@@ -1,0 +1,28 @@
+# Environment
+.env
+.venv/
+amazon/
+
+# macOS files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+logs/
+
+# Dataset caches
+src/data/
+# OR, if you want more granular:
+# src/data/*.arrow
+# src/data/*.json
+
+# Huggingface Trainer cache
+src/models/bert_model/trainer_state.json
+
+# Ignore all BERT model files except the lightweight FP16 one
+src/models/bert_model/*
+!src/models/bert_model/model_fp16.safetensors
