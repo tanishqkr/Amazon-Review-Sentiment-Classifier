@@ -1,6 +1,3 @@
-
-
-````markdown
 # Amazon Review Sentiment Classifier
 
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
@@ -22,40 +19,42 @@ This repository contains a sentiment analysis system for Amazon product reviews 
 
 ## Installation
 
-1. Clone the repository:
+1.  **Clone the repository:**
 
-```bash
-git clone https://github.com/tanishqkr/Amazon-Review-Sentiment-Classifier.git
+    ```bash
+    git clone https://github.com/tanishqkz/Amazon-Review-Sentiment-Classifier.git
+    cd Amazon-Review-Sentiment-Classifier
+    ```
 
-````
+2.  **Create a Python environment:**
 
-2. Create a Python environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # macOS/Linux
+    venv\Scripts\activate     # Windows
+    ```
 
-```bash
-python -m venv venv
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate     # Windows
-```
+3.  **Install dependencies:**
 
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ---
 
 ## Usage
 
-Launch the Gradio app:
+1.  **Launch the Gradio app:**
 
-```bash
-python src/app.py
-```
+    ```bash
+    python src/app.py
+    ```
 
-* Enter an Amazon review.
-* Select a model: `BERT` or `LSTM`.
-* Click **Predict** to see the sentiment.
+2.  Enter an Amazon review.
+
+3.  Select a model: **BERT** or **LSTM**.
+
+4.  Click **Predict** to see the sentiment.
 
 ---
 
@@ -70,21 +69,19 @@ src/
 │   ├── bert_model/
 │   │   └── model_fp16.safetensors  # Lightweight BERT
 │   └── lstm_model.pt
-├── data/                    # Train/test/validation datasets
+└── data/                   # Train/test/validation datasets
 ```
 
 ---
 
 ## Notes
 
-* The FP16 BERT model is tracked via **Git LFS**.
-* Original full-precision BERT files are excluded to keep the repository size manageable.
-* Ensure your system has sufficient RAM/VRAM for inference.
+- The FP16 BERT model is tracked via **Git LFS**.
+- Original full-precision BERT files are excluded to keep the repository size manageable.
+- Ensure your system has sufficient RAM/VRAM for inference.
 
 ---
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
-
-
+MIT License. See `LICENSE` for details.
