@@ -1,4 +1,4 @@
-# Amazon Review Sentiment Classifier
+# Large-scale-sentiment-analysis-bert
 
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
